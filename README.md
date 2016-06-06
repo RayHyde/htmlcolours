@@ -4,4 +4,6 @@ I've created this app because all the lists of HTM colours I could find on the w
 
 This project is part of my Playground - a collection of fun (and dare I say it: clever) stuff I made in the past, from jQuery games and plugins to CSS animation tricks.
 
-Please drop in on the playground section of my portfolio site www.rayhyde.nl!
+<p>See it in action: <a href="http://rayhyde.github.io/htmlcolours/">http://rayhyde.github.io/htmlcolours/</a> </p>
+
+Please drop in on my portfolio site <a href="http://www.rayhyde.nl">www.rayhyde.nl</a>!
