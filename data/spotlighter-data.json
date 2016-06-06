@@ -1,0 +1,67 @@
+[
+	{
+		"tipSeq": 1,
+		"tipLink": ".header-text",
+		"tipText": "The colours of the header are automatically generated from the list of named HTML colours and are refreshed each time you re-load the page",
+		"tipSize": 250,
+		"adjustX" : 0,
+		"adjustY" : 0
+	},
+	{
+		"tipSeq": 2,
+		"tipLink": ".search",
+		"tipText": "Enter (part of) a name, hex value or rgb value to filter the colours",
+		"tipSize": 200,
+		"adjustX" : 0,
+		"adjustY" : 0
+	},
+	{
+		"tipSeq": 3,
+		"tipLink": ".sorter",
+		"tipText": "Here you can sort the colours by their names (default) or by their hex values.",
+		"tipSize": 100,
+		"adjustX" : 0,
+		"adjustY" : 0
+	},
+	{
+		"tipSeq": 4,
+		"tipLink": ".gridder",
+		"tipText": "The \"listing\" button shows the colours as a list, which works particulary nice when sorting by value.",
+		"tipSize": 150,
+		"adjustX" : 0,
+		"adjustY" : 0
+	},
+	{
+		"tipSeq": 5,
+		"tipLink": ".results > li:first-child .names",
+		"tipText": "The individual colour lists its HTML colour name, its hex value and its rgb values",
+		"tipSize": 200,
+		"adjustX" : 0,
+		"adjustY" : 0
+	},
+	{
+		"tipSeq": 6,
+		"tipLink": ".results > li:first-child .plus",
+		"tipText": "If you click on the plus, the colour is added to your library",
+		"tipSize": 100,
+		"adjustX" : 0,
+		"adjustY" : 0
+	},
+	{
+		"tipSeq": 7,
+		"tipLink": "#mylibrary h2",
+		"tipText": "Here you can keep memorable colours. They are remembered and will be there next time you visit this page.",
+		"tipSize": 200,
+		"adjustX" : 0,
+		"adjustY" : 0
+	},
+	{
+		"tipSeq": 8,
+		"tipLink": "#mixer-input",
+		"tipText": "The Scratchpad lets you enter your own hex colour to spot if there are named colours that come close to it",
+		"tipSize": 200,
+		"adjustX" : 0,
+		"adjustY" : 0
+	}
+]
+

@@ -1,0 +1,57 @@
+#explain {
+	background: #444 url("http://rayhyde.nl/playground/img/playground.png") no-repeat scroll 98% bottom / 150px auto;
+	border-radius: 10px;
+	color: #fff;
+	padding: 20px;
+	min-height: 160px;
+	margin-top: 30px;
+	> p {
+		line-height: 150%;
+		&.extra-padding {
+			padding-right: 160px;
+		}
+	}
+	h2 {
+		margin: 0 0 10px;
+	}
+	a {
+		color: #ffffff;
+		-webkit-transition: 0.3s all;
+		-o-transition: 0.3s all;
+		transition: 0.3s all;
+		border-bottom: solid 1px #ffffff;
+		text-decoration: none;
+		&:hover {
+			border-color: transparent;
+			text-decoration: none;
+		}
+	}
+}
+.btn.download {
+	@c: #384F06;
+	background: @c;
+	border: 0 none;
+	-webkit-transition: 0.3s all;
+	-o-transition: 0.3s all;
+	transition: 0.3s all;
+	&:hover {
+		background: lighten(@c, 10%);
+	}
+}
+.tar {
+	text-align: right;
+}
+.tac {
+	text-align: center;
+}
+pre {
+  font-size: 105%;
+	white-space: pre-wrap;
+}
+.copyright {
+	text-align: center;
+	margin: 20px auto;
+	a {
+		color: midnightblue;
+	}
+}
