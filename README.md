@@ -6,4 +6,8 @@ This project is part of my Playground - a collection of fun (and dare I say it: 
 
 <p>See it in action: <a href="http://rayhyde.github.io/htmlcolours/">http://rayhyde.github.io/htmlcolours/</a> </p>
 
-Please drop in on my portfolio site <a href="http://www.rayhyde.nl">www.rayhyde.nl</a>!
+<h2>My Playground</h2>
+
+<p>This project is part of my Playground - a collection of fun (and dare I say it: clever) stuff I made in the past, from jQuery games and plugins to CSS animation tricks.</p>
+
+<p>Please drop in on my portfolio site <a href="http://www.rayhyde.nl">www.rayhyde.nl</a>!</p>
