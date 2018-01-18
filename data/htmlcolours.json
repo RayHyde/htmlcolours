@@ -595,6 +595,11 @@
 "rgbvalue": "128,0,128"
 },
 {
+"name": "RebeccaPurple",
+"hexvalue": "#663399",
+"rgbvalue": "102,51,153"
+},
+{
 "name": "Red",
 "hexvalue": "#FF0000",
 "rgbvalue": "255,0,0"
