@@ -17,29 +17,30 @@
 	<meta name="keywords" content="html, css, color, colors, colour, colours, hex, rgb, named colors, named colours">
 	<meta name="author" content="Ray Hyde | www.rayhyde.nl">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--	<link rel="shortcut icon" href="images/favicon.png">-->
+	<link rel="shortcut icon" href="img/favicon.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/playgound-explain.css">
 	<link rel="stylesheet" href="http://www.rayhyde.nl/playground/spotlighter/css/spotlighter.css">
-	
+
 </head>
 
 <body ng-app="HtmlColours">
 	<div class="container first-container" ng-controller="ColoursCtrl">
 		<div class="row">
-			<div class="col-md-10"> 
+			<div class="col-md-10">
 
 				<div class="row">
 					<div class="col-xs-12">
 						<h1><span class="header-text">HTML Named Colours</span> <span class="glyphicon glyphicon-question-sign">
-							<div class="explain">Hover over a letter in the header to see its colour name. The colours are randomly generated when the page is loaded. Who knows? This might bring you fresh ideas!
-							</div></span></h1>
-							
-							<p>We've almost forgotten them, the good old HTML colours. Still, I use them a lot when prototyping. I love to quickly  type colours such as "tomato", "royalblue" or "forestgreen". And for immediately spotting an element in Firebug while keeping its text legible, nothing beats "background: gold".</p>
-							
-							<p>The input below lets you filter the colours on parts of its name, hex value or rgb value. The Scratchpad lets you enter your own hex colour to spot if there are named colours that come close to it. Clicking on a plus sign adds that colour to your library on the right, which is remembered next time you visit this page.</p>
-							<p>Also below you can sort the colours by their names (default) or by their hex values. The "listing" button shows the colours as a list, which works particularly nice when sorting by value. For more info, click the tour button on the right.</p>
+								<div class="explain">Hover over a letter in the header to see its colour name. The colours are randomly generated when the page is loaded. Who knows? This might bring you fresh ideas!
+								</div>
+							</span></h1>
+
+						<p>We've almost forgotten them, the good old HTML colours. Still, I use them a lot when prototyping. I love to quickly type colours such as "tomato", "royalblue" or "forestgreen". And for immediately spotting an element in Firebug while keeping its text legible, nothing beats "background: gold".</p>
+
+						<p>The input below lets you filter the colours on parts of its name, hex value or rgb value. The Scratchpad lets you enter your own hex colour to spot if there are named colours that come close to it. Clicking on a plus sign adds that colour to your library on the right, which is remembered next time you visit this page.</p>
+						<p>Also below you can sort the colours by their names (default) or by their hex values. The "listing" button shows the colours as a list, which works particularly nice when sorting by value. For more info, click the tour button on the right.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -48,7 +49,7 @@
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<div class="order-input">
-							<p class="sorter">	<span>Sort by:</span>
+							<p class="sorter"> <span>Sort by:</span>
 								<input type="radio" ng-model="sortType" ng-checked="sortType" name="sortBy" id="sortByName" value="name" checked="checked" class="active" />
 								<label for="sortByName">Name</label>
 
@@ -56,8 +57,8 @@
 								<label for="sortByValue">Value</label>
 							</p>
 							<p class="gridder">
-							<a href="" class="btn btn-default btn-success"><span class="glyphicon glyphicon-th"></span></a>
-							<a href="" class="btn button-list"><span class="glyphicon glyphicon-th-list"></span></a>
+								<a href="" class="btn btn-default btn-success"><span class="glyphicon glyphicon-th"></span></a>
+								<a href="" class="btn button-list"><span class="glyphicon glyphicon-th-list"></span></a>
 							</p>
 						</div>
 					</div>
@@ -67,7 +68,7 @@
 				<img src="img/ripolin.jpg" class="img-responsive">
 
 				<h3>Take a tour of this page</h3>
-				<p><a href="" class="btn btn-success btn-large startspotlighter spotlighter">Take tthe tour <span class="glyphicon glyphicon-eye-open"></span</span></a>
+				<p><a href="" class="btn btn-success btn-large startspotlighter spotlighter">Take tthe tour <span class="glyphicon glyphicon-eye-open"></span< /span></a>
 				</p>
 				<p class="small"><a href="http://rayhyde.github.io/spotlighter/">Learn more about my Spotlighter jQuery plugin at Github.</a></p>
 			</div>
@@ -81,7 +82,7 @@
 						<div class="names">
 							<span class="name">{{colour.name}}</span>
 							<span class="values">
-											<span class="value">{{colour.hexvalue}}</span> | <span class="rgb">{{colour.rgbvalue}}</span>
+								<span class="value">{{colour.hexvalue}}</span> | <span class="rgb">{{colour.rgbvalue}}</span>
 							</span>
 							<span class="glyphicon plus"></span>
 						</div>
@@ -121,7 +122,9 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div id="mylibrary">
-							<h2>My Library <span class="icon"><div class="explain">Your library is saved between browser sessions, so next time you visit this page, your colours are retrieved.</div></span></h2>
+							<h2>My Library <span class="icon">
+									<div class="explain">Your library is saved between browser sessions, so next time you visit this page, your colours are retrieved.</div>
+								</span></h2>
 							<ul class="listing">
 								<li data-value="{{colour.hexvalue}}" style="background-color: {{colour.hexvalue}}" ng-repeat="colour in colours | filter:filterLibrary">
 									<div class="names">
@@ -142,15 +145,18 @@
 		<p class="extra-padding">I've created this app because all the lists of HTM colours I could find on the were pretty ancient and looked the part. Clunky tables and no way to quickly filter them. So to breathe new life into something I like to use every now and again, I've created this web app in AngularJS, jQuery and Bootstrap.</p>
 		<p class="extra-padding">This page and the Spotlighter are part of my Playground - a collection of fun (and dare I say it: clever) stuff I made in the past, from jQuery games and plugins to CSS animation tricks.
 			<br>
-			<br><a href="http://www.rayhyde.nl">Please drop in on my portfolio site www.rayhyde.nl!</a></p>
+			<br><a href="http://www.rayhyde.nl">Please drop in on my portfolio site www.rayhyde.nl!</a>
+		</p>
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 copyright tac">&copy; <script type="text/javascript">
-				var tD = new Date();
-				var datestr = tD.getFullYear();
-				document.write(datestr);
-			</script> Ray Hyde | <a href="http://www.rayhyde.nl">www.rayhyde.nl</a></div>
+			<div class="col-xs-12 copyright tac">&copy;
+				<script type="text/javascript">
+					var tD = new Date();
+					var datestr = tD.getFullYear();
+					document.write(datestr);
+				</script> Ray Hyde | <a href="http://www.rayhyde.nl">www.rayhyde.nl</a>
+			</div>
 		</div>
 	</div>
 	<div id="color-number">Add to My Library</div>
@@ -160,7 +166,7 @@
 	</div>
 	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
-	<script src="js/htmlcolours.controller.js"></script> 
+	<script src="js/htmlcolours.controller.js"></script>
 	<script src="http://www.rayhyde.nl/playground/spotlighter/js/jquery.spotlighter.min.js" type="text/javascript"></script>
 	<script>
 		$('.startspotlighter').spotlighter({
